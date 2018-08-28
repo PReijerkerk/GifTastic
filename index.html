@@ -2,13 +2,47 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+    <!--Myers Reset Link-->
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css"/> -->
+    <!--CSS/Bootstrap linking-->
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Page Title</title>
 </head>
 <body>
-    
+
+    <div class="container">
+        <div class="jumbotron text-center">
+            <h1>All about those GIFs</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div id="tv-show-buttons">
+
+                </div>
+            </div>
+            <div class="col-md-6">
+                <form id="form">
+                    <label for="show-input">Add a TV show!</label>
+                    <input type="text" id="show-input">
+                    <input id="add-show" type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-centered">
+                <div id="shows-gif"></div>
+            </div>
+        </div>
+    </div>
+
+
+ <!--Javascript/Jquery linking-->
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.js" integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA=" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+ <script src="assets/javascript/app.js"></script>
 </body>
 </html>
