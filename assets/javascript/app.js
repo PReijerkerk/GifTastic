@@ -29,6 +29,7 @@ $("button").on("click", function () {
         url: queryURL,
         method: "GET"
     }).done(function(response) {
+        console.log(response);
        //sets a variable results equal to the data from the server response
         var results = response.data;
         //empty the shows-gif div on clicking a new button
@@ -58,13 +59,23 @@ $("button").on("click", function () {
     });
 });
 
+function changeDataState() {
+    var state = $(this).attr("data-state");
+    var animateImage = $(this).attr("data-animate");
+    var stillImage = $(this).attr("data-still");
 
+    if(state = "still") {
+        $(this).attr("src", animateImage);
+        $(this).attr("data-state", "animate");
+    }
 
+    else if(state = "animate") {
+        console.log("working");
+        $(this).attr("src", stillImage);
+        $(this).attr("data-state", "still");
+    }
+};
 
+$(document).on("click", ".gif", changeDataState);
 
-
-
-
-
-
-})
+});
