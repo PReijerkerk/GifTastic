@@ -14,9 +14,7 @@ $(document).ready(function() {
   //add a button for an input show
   $("#add-show").on("click", function() {
     event.preventDefault();
-    var userShow = $("#show-input")
-      .val()
-      .trim();
+    var userShow = $("#show-input").val().trim();
     shows.push(userShow);
     console.log(shows);
     renderButtons();
