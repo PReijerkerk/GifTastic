@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  var shows = ["futurama", "south park", "archer", "rick and morty", "lost"];
+  var shows = ["futurama", "south park", "archer", "rick and morty"];
 
   //adds button for the original shows array
   function renderButtons() {
