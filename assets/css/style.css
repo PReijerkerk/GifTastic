@@ -1,3 +1,8 @@
+body {
+    background-image: url("../images/pleaseStandBy.jpg");
+    background-size: cover;
+  }
+
 .col-centered {
     float: none;
     margin-right: auto;
@@ -6,8 +11,8 @@
 
 #tv-show-buttons,
 #form,
-.jumbotron,
-#shows-gif {
+#shows-gif,
+header {
     border: 5px solid black;
     background-color: white;
   }
